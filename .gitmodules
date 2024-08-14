@@ -1,0 +1,6 @@
+[submodule "scripts/lattice_estimator"]
+	path = scripts/lattice_estimator
+	url = https://github.com/malb/lattice-estimator
+[submodule "code/libs/flint"]
+	path = code/libs/flint
+	url = https://github.com/flintlib/flint
