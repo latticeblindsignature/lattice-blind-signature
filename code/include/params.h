@@ -152,31 +152,31 @@
 // 256 / n + l
 #define PARAM_ARP_DIV_N_L_ISS 7
 // Gaussian mask width for cs_1
-#define PARAM_S1_ISS 10258622.89452818408608436584
+#define PARAM_S1_ISS 14507883.62871289625763893127
 // Squared Gaussian mask width for cs_1
-#define PARAM_S1SQ_ISS 105239343692137.81250000000000000000
+#define PARAM_S1SQ_ISS 210478687384275.68750000000000000000
 // Gaussian mask width for cs_2
-#define PARAM_S2_ISS 13157.08519160629293764941
+#define PARAM_S2_ISS 18606.92831926783037488349
 // Squared Gaussian mask width for cs_2
-#define PARAM_S2SQ_ISS 173108890.73918560147285461426
+#define PARAM_S2SQ_ISS 346217781.47837114334106445312
 // Gaussian mask width for Rs_1 (ARP)
-#define PARAM_S3_ISS 2220943.58923175372183322906
+#define PARAM_S3_ISS 3140888.54515712615102529526
 // Squared Gaussian mask width for Rs_1 (ARP)
-#define PARAM_S3SQ_ISS 4932590426549.62500000000000000000
+#define PARAM_S3SQ_ISS 9865180853099.24804687500000000000
 // Rejection sampling rate for y_1
-#define PARAM_REJ1_ISS 2
+#define PARAM_REJ1_ISS 1.41421356237309514547
 // Rejection sampling rate for y_2
-#define PARAM_REJ2_ISS 2
+#define PARAM_REJ2_ISS 1.41421356237309514547
 // Rejection sampling rate for y_3
-#define PARAM_REJ3_ISS 2
+#define PARAM_REJ3_ISS 1.41421356237309514547
 // Squared verification bound for z_1
-#define PARAM_B1SQ_ISS 767107606508928768UL
+#define PARAM_B1SQ_ISS 1534215213017858048UL
 // Squared verification bound for z_2 (high bits)
-#define PARAM_B2SQ_ISS_LOW64 13530852096220594176UL
+#define PARAM_B2SQ_ISS_LOW64 13550721306222788608UL
 // Squared verification bound for z_2 (low bits)
 #define PARAM_B2SQ_ISS_HIGH64 48UL
 // Squared verification bound for z_3
-#define PARAM_B3SQ_ISS 543467640738730UL
+#define PARAM_B3SQ_ISS 1086935281477460UL
 // Infinity norm of challenges
 #define PARAM_RHO_ISS 8
 // Manhattan-like norm of challenges
@@ -220,31 +220,31 @@
 // 256 / n + l
 #define PARAM_ARP_DIV_N_L_SHOW 7
 // Gaussian mask width for cs_1
-#define PARAM_S1_SHOW 1406027.47268197103403508663
+#define PARAM_S1_SHOW 1988423.12093600956723093987
 // Squared Gaussian mask width for cs_1
-#define PARAM_S1SQ_SHOW 1976913253936.45068359375000000000
+#define PARAM_S1SQ_SHOW 3953826507872.90039062500000000000
 // Gaussian mask width for cs_2
-#define PARAM_S2_SHOW 12770.02712312388757709414
+#define PARAM_S2_SHOW 18059.54554939407898928039
 // Squared Gaussian mask width for cs_2
-#define PARAM_S2SQ_SHOW 163073592.72531974315643310547
+#define PARAM_S2SQ_SHOW 326147185.45063948631286621094
 // Gaussian mask width for Rs_1 (ARP)
-#define PARAM_S3_SHOW 277540.14345016190782189369
+#define PARAM_S3_SHOW 392501.03497019322821870446
 // Squared Gaussian mask width for Rs_1 (ARP)
-#define PARAM_S3SQ_SHOW 77028531226.33645629882812500000
+#define PARAM_S3SQ_SHOW 154057062452.67285156250000000000
 // Rejection sampling rate for y_1
-#define PARAM_REJ1_SHOW 2
+#define PARAM_REJ1_SHOW 1.41421356237309514547
 // Rejection sampling rate for y_2
-#define PARAM_REJ2_SHOW 2
+#define PARAM_REJ2_SHOW 1.41421356237309514547
 // Rejection sampling rate for y_3
-#define PARAM_REJ3_SHOW 2
+#define PARAM_REJ3_SHOW 1.41421356237309514547
 // Squared verification bound for z_1
-#define PARAM_B1SQ_SHOW 11833315492058180UL
+#define PARAM_B1SQ_SHOW 23666630984116356UL
 // Squared verification bound for z_2 (high bits)
-#define PARAM_B2SQ_SHOW_LOW64 16830841499513323520UL
+#define PARAM_B2SQ_SHOW_LOW64 16835435389573857280UL
 // Squared verification bound for z_2 (low bits)
 #define PARAM_B2SQ_SHOW_HIGH64 2UL
 // Squared verification bound for z_3
-#define PARAM_B3SQ_SHOW 8486922796148UL
+#define PARAM_B3SQ_SHOW 16973845592296UL
 // Infinity norm of challenges
 #define PARAM_RHO_SHOW 8
 // Manhattan-like norm of challenges

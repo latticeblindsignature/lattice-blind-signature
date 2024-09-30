@@ -201,36 +201,6 @@ class SEP_Parameters:
 
         # Computing required M-SIS security for type I+II forgeries
         self.tag_space_size = comb(self.n, self.w)
-        # # M-LWE loss
-        # mlwe_hardness_bound = 2 ** (- (self.mlwe_coresvp_q if QUANTUM else self.mlwe_coresvp_c))
-        # Ek = self.k * mlwe_hardness_bound
-        # Em = self.m * mlwe_hardness_bound
-        # # Trapdoor switching loss
-        # a = 2 * self.sec / (2 * self.sec - 1)
-        # o = 2 * self.sec
-        # eps = 2 ** LOG2_EPS
-        # delta = ((1+eps)/(1-eps))**(12*self.d*(self.n - 1)+5) * ((1+eps/(self.n*self.d*self.k))/(1-eps/(self.n*self.d*self.k)))**(2*self.n*self.d*self.k)
-        # loss_TS = (1 + o*(o-1)/(2*(2-delta)**(o+1)) * (delta-1)**2)**(self.Q/o)
-
-        # # Computing loss through hybrid argument
-        # loss = lambda Adv: ((((Adv - Ek)*1/loss_TS) ** a - 2*Ek)*1/loss_TS) ** a - Ek # Equation (2)
-        # advantage_I = 2 ** (-self.sec)
-        # for _ in range(self.d):
-        #     advantage_I = loss(advantage_I)
-        # advantage_I = 1/(2*(self.tag_space_size - self.Q)) * (advantage_I - Ek)
-        # if advantage_I < 0:
-        #     raise ValueError('ERROR in M-SIS required security: M-LWE hardness not sufficient for Type I')
-        # else:
-        #     self.req_msis_coresvp_I = ceil( - log2(advantage_I) )
-        # # Computing loss through hybrid argument
-        # advantage_II = 1/(2 * (2*self.M_1) * (2*self.M_2)) * (1-eps)/(1+eps) * 2 ** (-self.sec)
-        # for _ in range(self.d):
-        #     advantage_II = loss(advantage_II)
-        # advantage_II = 1/(2*self.Q) * (advantage_II - Ek)
-        # if advantage_II < 0:
-        #     raise ValueError('ERROR in M-SIS required security: M-LWE hardness not sufficient for Type II')
-        # else:
-        #     self.req_msis_coresvp_II = ceil( - log2(advantage_II) )
 
         # Computing M-SIS security for type I+II forgeries
         # Bounds for v verification (Gaussian tail bound)
@@ -620,9 +590,9 @@ class Issue_ZKP_Parameters:
         self.bound_arp = sqrt(B_r1_sq + B_r2r3_sq + sig.n + 1 + pke.B_re_sq + B_j_sq)
 
         # Rejection sampling parameters (hardcoded)
-        self.M_1 = 2
-        self.M_2 = 2
-        self.M_3 = 2
+        self.M_1 = sqrt(2)
+        self.M_2 = sqrt(2)
+        self.M_3 = sqrt(2)
         self.alpha_1 = sqrt(pi/log(self.M_1))
         self.alpha_2 = sqrt(pi/log(self.M_2))
         self.alpha_3 = sqrt(pi/log(self.M_3))
@@ -916,9 +886,9 @@ class Show_ZKP_Parameters:
         self.bound_witness = sqrt(sig.B_1_prime_sq + sig.B_2_prime_sq + sig.w + 1)
 
         # Rejection sampling parameters (hardcoded)
-        self.M_1 = 2
-        self.M_2 = 2
-        self.M_3 = 2
+        self.M_1 = sqrt(2)
+        self.M_2 = sqrt(2)
+        self.M_3 = sqrt(2)
         self.alpha_1 = sqrt(pi/log(self.M_1))
         self.alpha_2 = sqrt(pi/log(self.M_2))
         self.alpha_3 = sqrt(pi/log(self.M_3))
